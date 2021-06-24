@@ -1,0 +1,28 @@
+body {
+    box-sizing: border-box;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+}
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    border: 1px solid black;
+}
+
+.block > .figure {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: 2px solid black;
+
+}
+.block > .figure[selected] {
+    border-color: red;
+}
